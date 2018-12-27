@@ -1,0 +1,41 @@
+The API (Application programming interface, what we can tell the turtle to do)
+
+Things you can tell a world
+
+Command						 Action
+
+World w = new World();				 Makes a new 600 by 600 pixel world
+
+World w = new World(w, h, Color.Red);		 Makes a new w by h pixel with a red background
+
+w.clearGround();				 Erases all turtle trails
+
+w.saveAs("someImageName.png");			 Saves the current image in your project folder
+
+Things you can tell the turtle
+
+Command						 Action
+
+Turtle t = new Turtle(someWorld);		 Makes a new turtle in the center of the world
+
+Turtle t = new Turtle(world, x, y);		 Makes a new turtle at the specified point of the world
+
+t.forward(100);					 t moves forward 100 pixels
+
+t.backward(83);					 t moves backward 83 pixels
+
+t.right(306);					 t rotates to its right (clockwise) 306 degrees
+
+t.left(34);					 t rotates to its left (counter-clockwise) 34 degrees
+
+t.setColor(Color.RED);				 t becomes a red turtle
+
+t.pickPenUp();					 t stops leaving trails as it moves
+
+t.setShellSize(123);				 t becomes a large turtle
+
+t.setPenWidth(25);				 trails t leaves are now 25 pixels wide
+
+t.dropPicture("http://example.com/logo.png, 30); t draws a picture about 30 pixels wide where it is standing
+
+There are other methods such as t.penPenDown(), see eclipse for more.
